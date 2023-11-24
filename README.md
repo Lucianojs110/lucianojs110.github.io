@@ -1,1 +1,1 @@
-Portafolio d luciano oroño
+Portafolio de Luciano Oroño
