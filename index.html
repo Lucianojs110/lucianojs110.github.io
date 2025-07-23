@@ -13,376 +13,389 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
 
-    <!-- Read and update content attributes accordingly  -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
 
-    <meta
-      name="description"
-      content="En esta web puedes ver mis proyectos y contactarme para trabajar juntos!."
-    />
+  <!-- Read and update content attributes accordingly  -->
 
-    <!-- Google / Search Engine Tags -->
-<meta itemprop="name" content="Portafolio Luciano Oroño">
-<meta itemprop="description" content="En esta web puedes ver mis proyectos y contactarme para trabajar juntos!.">
+  <meta name="description" content="En esta web puedes ver mis proyectos y contactarme para trabajar juntos!." />
 
-<!-- Reference screenshot of updated site's header in place of content -->
-<meta itemprop="image" content="assets/images/sharing-card.png">
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="Portafolio Luciano Oroño">
+  <meta itemprop="description" content="En esta web puedes ver mis proyectos y contactarme para trabajar juntos!.">
 
-<!-- Facebook Meta Tags -->
-<meta property="og:url" content="https://lucianojs110.github.io/">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Portafolio Luciano Oroño">
-<meta property="og:description" content="En esta web puedes ver mis proyectos y contactarme para trabajar juntos!">
+  <!-- Reference screenshot of updated site's header in place of content -->
+  <meta itemprop="image" content="assets/images/sharing-card.png">
 
-<!-- Reference screenshot of updated site's header in content -->
-<meta property="og:image" content="assets/images/sharing-card.png">
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://lucianojs110.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Portafolio Luciano Oroño">
+  <meta property="og:description" content="En esta web puedes ver mis proyectos y contactarme para trabajar juntos!">
 
-<!-- Twitter Meta Tags -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Portafolio Luciano Oroño">
-<meta name="twitter:description" content="En esta web puedes ver mis proyectos y contactarme para trabajar juntos!.">
+  <!-- Reference screenshot of updated site's header in content -->
+  <meta property="og:image" content="assets/images/sharing-card.png">
 
-<!-- Reference screenshot of updated site's header in content -->
-<meta name="twitter:image" content="assets/images/sharing-card.png">
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Portafolio Luciano Oroño">
+  <meta name="twitter:description" content="En esta web puedes ver mis proyectos y contactarme para trabajar juntos!.">
+
+  <!-- Reference screenshot of updated site's header in content -->
+  <meta name="twitter:image" content="assets/images/sharing-card.png">
 
 
-<!-- Update favicon href attribute with image of yourself -->
-    <link
-      rel="shortcut icon"
-      href="assets/images/favicons.png"
-      type="image/png"
-    />
+  <!-- Update favicon href attribute with image of yourself -->
+  <link rel="shortcut icon" href="assets/images/favicons.png" type="image/png" />
 
-    <!-- Preloading fonts for better performance -->
+  <!-- Preloading fonts for better performance -->
 
-    <link
-      rel="preload"
-      href="assets/fonts/Mona-Sans.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
+  <link rel="preload" href="assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin />
 
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 
-    <!-- Your name here -->
-    <title>Tec. Luciano Oroño</title>
-  </head>
+  <!-- Your name here -->
+  <title>Tec. Luciano Oroño</title>
+</head>
 
-  <body>
+<body>
 
-    <script>
-      const theme = localStorage.getItem("theme") || "dark";
-      document.body.classList.add(theme);
-    </script>
+  <script>
+    const theme = localStorage.getItem("theme") || "dark";
+    document.body.classList.add(theme);
+  </script>
 
-    <header class="header">
+  <header class="header">
 
-      <div class="menu-btn-container">
-        <div class="container">
-          <button type="button" class="menu-btn">menu</button>
+    <div class="menu-btn-container">
+      <div class="container">
+        <button type="button" class="menu-btn">menu</button>
+      </div>
+    </div>
+
+    <nav class="nav hidden">
+      <ol class="nav-items">
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#work">Mi Trabajo</a></li>
+        <li class="nav-item"><a href="#skills">Mis Skills</a></li>
+        <li class="nav-item">
+          <a href="#contact" data-focused="last-focused">Contacto</a>
+        </li>
+      </ol>
+    </nav>
+
+    <div class="container">
+      <div class="header-textbox">
+        <!-- Replace with your name and job title -->
+        <h1 class="h1">
+          Hola! soy Luciano Oroño<br />
+          Full Stack Developer
+        </h1>
+
+        <!-- Add a small introductory paragraph about yourself -->
+        <p class="header-text">
+          Soy un apasionado desarrollador web full stack con una misión: transformar ideas en experiencias digitales
+          excepcionales. Con experiencia en el desarrollo de soluciones robustas y creativas, estoy aquí para llevar tu
+          visión al siguiente nivel.
+        </p>
+
+        <div class="header-btns">
+          <a href="#contact" class="btn btn-cta">Contactame</a>
+          <a href="#work" class="btn btn-secondary">Ver mi trabajo</a>
         </div>
       </div>
+    </div>
+  </header>
 
-      <nav class="nav hidden">
-        <ol class="nav-items">
-          <li class="nav-item"><a href="#">Home</a></li>
-          <li class="nav-item"><a href="#work">Mi Trabajo</a></li>
-          <li class="nav-item"><a href="#skills">Mis Skills</a></li>
-          <li class="nav-item">
-            <a href="#contact" data-focused="last-focused">Contacto</a>
+  <main>
+
+    <section>
+
+      <div class="container">
+        <h2 class="h2">Servicios</h2>
+        <ol class="testimonials">
+          <li class="testimonial">
+            <h3 class="h3">DESARROLLO WEB</h3>
+            <blockquote class="testimonial-text">
+              Como profesional del diseño web, transformo ideas en experiencias visuales cautivadoras y altamente
+              funcionales. Mi enfoque centrado en el usuario garantiza sitios web responsivos y atractivos, combinando
+              creatividad con las últimas tendencias tecnológicas para destacar en el mundo digital actual.
+            </blockquote>
+
+          </li>
+          <li class="testimonial">
+            <h3 class="h3">SISTEMAS DE GESTIÓN</h3>
+            <blockquote class="testimonial-text">
+              Con experiencia especializada en el desarrollo de sistemas de gestión, ofrezco soluciones personalizadas
+              para empresas e industrias. Mi enfoque abarca desde la formación técnica hasta la implementación,
+              garantizando eficiencia y adaptabilidad en cada proyecto. Transformo complejidades empresariales en
+              soluciones tecnológicas intuitivas y efectivas.
+            </blockquote>
+
+          </li>
+          <li class="testimonial">
+            <h3 class="h3">INFRAESTRUCTURA</h3>
+            <blockquote class="testimonial-text">
+
+              Como especialista en infraestructura, lidero el manejo de servidores, motores de bases de datos y
+              contenedores, garantizando un rendimiento óptimo y una escalabilidad eficiente. Además, ofrezco servicios
+              de mantenimiento de sistemas para asegurar la estabilidad y confiabilidad de las operaciones
+              empresariales.
+            </blockquote>
+
           </li>
         </ol>
-      </nav>
+      </div>
+    </section>
 
+
+    <section class="work">
       <div class="container">
-        <div class="header-textbox">
-          <!-- Replace with your name and job title -->
-          <h1 class="h1">
-            Hola! soy Luciano Oroño<br />
-            Full Stack  Developer
-          </h1>
+        <h2 class="h2" id="work">Desarrollos destacados</h2>
+        <div class="work-boxes">
 
-          <!-- Add a small introductory paragraph about yourself -->
-          <p class="header-text">
-            Soy un apasionado desarrollador web full stack con una misión: transformar ideas en experiencias digitales excepcionales. Con experiencia en el desarrollo de soluciones robustas y creativas, estoy aquí para llevar tu visión al siguiente nivel.
-          </p>
 
-          <div class="header-btns">
-            <a href="#contact" class="btn btn-cta">Contactame</a>
-            <a href="#work" class="btn btn-secondary">Ver mi trabajo</a>
+
+          <div class="work-box">
+            <div class="work-textbox">
+              <!-- Add your project title here -->
+              <h3 class="h3">TIENDA VALLEJOS MATERIALES</h3>
+              <!-- Add small description of your project  -->
+              <p class="work-text">
+                Se trata de un desarrollo de tienda y panel de admnistracíon, con sincronizacion a un Web Service,
+                pasarellas de pagos, control de stock,
+                presupuestos y calculadora de materiales
+              </p>
+              <!-- Add technologies you used to build the project -->
+              <ol class="work-technologies">
+                <li>GO</li>
+                <li>Astro</li>
+                <li>MongoDB</li>
+
+              </ol>
+
+              <div class="work-links">
+                <!-- Add url of project in href attribute -->
+                <a href="https://vallejosmateriales.com.ar/" target="_blank" rel="noopener" class="link">Ver
+                  Proyecto</a>
+
+
+                </a>
+              </div>
+            </div>
+
+            <!-- Update img src and alt attribute  -->
+
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/vallejos.png" alt="agency elevation" />
+            </picture>
+          </div>
+
+
+
+
+          <div class="work-box">
+            <div class="work-textbox">
+              <!-- Add your project title here -->
+              <h3 class="h3">CRM OSFATUN</h3>
+              <!-- Add small description of your project  -->
+              <p class="work-text">
+                Desarrollado con Laravel 8 en el backend y Vue en el Front. Centraliza las gestiones de los socios ante
+                la obra social.
+              </p>
+              <!-- Add technologies you used to build the project -->
+              <ol class="work-technologies">
+                <li>Laravel</li>
+                <li>Vue</li>
+                <li>PostgreSQL</li>
+                <li>AWS</li>
+              </ol>
+
+              <div class="work-links">
+                <!-- Add url of project in href attribute -->
+                <a href="https://www.osfatun.com.ar/" target="_blank" rel="noopener" class="link">Ver Proyecto</a>
+
+
+                </a>
+              </div>
+            </div>
+
+            <!-- Update img src and alt attribute  -->
+
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/work/crm1.png" alt="agency elevation" />
+            </picture>
+          </div>
+
+
+
+          <div class="work-box">
+            <div class="work-textbox">
+              <!-- Add your project title here -->
+              <h3 class="h3">MI GESTAR - PAGO DE SERVICIOS</h3>
+              <!-- Add small description of your project  -->
+
+              <p class="work-text">Se trata de un sistema de pagos multiempresa, donde pueden pagar distintos servicios
+                totalmente configurable, los clientes pueden descargar facturas, y los administradoes pueden configurar
+                hasta 3 pasarellas de pago distintas.</p>
+              <ol class="work-technologies">
+                <li>Laravel</li>
+                <li>MySql</li>
+                <li>AWS</li>
+              </ol>
+              <div class="work-links">
+                <!-- Add url of project in href attribute -->
+                <a href="https://migestarcoop.com.ar/CEVIC/login" target="_blank" rel="noopener" class="link">Ver
+                  Proyecto</a>
+
+
+              </div>
+            </div>
+            <!-- Update img src and alt attribute  -->
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/work/gestar2.png" alt="agency elevation" />
+            </picture>
+          </div>
+
+
+
+          <div class="work-box">
+            <div class="work-textbox">
+              <!-- Add your project title here -->
+              <h3 class="h3">ERP - BIT</h3>
+              <!-- Add small description of your project  -->
+              <p class="work-text">
+                Sistema de gestión de negocios multisucursal con manejo de stock, sucursales, vendedores facturacion
+                AFIP para responsables inscriptos y monotributistas generación de reportes para afip, alertas de stock,
+                compras y cajas. Ultilizado hasta ahora por 15 negocios
+              </p>
+              <ol class="work-technologies">
+                <li>Laravel</li>
+                <li>MySql</li>
+                <li>Ubuntu Server</li>
+                <li>Web Services AFIP</li>
+              </ol>
+              <div class="work-links">
+                <!-- Add url of project in href attribute -->
+                <a href="#" target="_blank" rel="noopener" class="link">Ver Proyecto</a>
+
+                <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                <a href="https://gitlab.com/tanometro/erp" target="_blank" rel="noopener" title="Source code">
+                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                </a>
+              </div>
+            </div>
+            <!-- Update img src and alt attribute  -->
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/work/erp1.png" alt="contribute dev" />
+            </picture>
           </div>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      
-      <section>
-        
-        <div class="container">
-          <h2 class="h2">Servicios</h2>
-          <ol class="testimonials">
-            <li class="testimonial">
-              <h3 class="h3">DESARROLLO WEB</h3>
-              <blockquote class="testimonial-text">
-                Como profesional del diseño web, transformo ideas en experiencias visuales cautivadoras y altamente funcionales. Mi enfoque centrado en el usuario garantiza sitios web responsivos y atractivos, combinando creatividad con las últimas tendencias tecnológicas para destacar en el mundo digital actual.
-              </blockquote>
-            
-            </li>
-            <li class="testimonial">
-              <h3 class="h3">SISTEMAS DE GESTIÓN</h3>
-              <blockquote class="testimonial-text">
-                Con experiencia especializada en el desarrollo de sistemas de gestión, ofrezco soluciones personalizadas para empresas e industrias. Mi enfoque abarca desde la formación técnica hasta la implementación, garantizando eficiencia y adaptabilidad en cada proyecto. Transformo complejidades empresariales en soluciones tecnológicas intuitivas y efectivas.
-              </blockquote>
-             
-            </li>
-            <li class="testimonial">
-              <h3 class="h3">INFRAESTRUCTURA</h3>
-              <blockquote class="testimonial-text">
-             
-                Como especialista en infraestructura, lidero el manejo de servidores, motores de bases de datos y contenedores, garantizando un rendimiento óptimo y una escalabilidad eficiente. Además, ofrezco servicios de mantenimiento de sistemas para asegurar la estabilidad y confiabilidad de las operaciones empresariales.
-              </blockquote>
-      
-            </li>
-          </ol>
+
+    <!-- Update skills-img src, alt  and title attributes I have added some other logos in assets/images/skill for your convenience feel free to pick one if required  -->
+
+    <section class="skills">
+      <div class="container">
+        <h2 class="h2" id="skills">Mis Skills</h2>
+        <div class="skills-imgs">
+          <img src="assets/images/skills/Laravel.png" alt="React" class="skills-img" loading="lazy" title="React">
+          <img src="assets/images/skills/vue.png" alt="Svelte" class="skills-img" loading="lazy" title="Svelte">
+          <img src="assets/images/skills/php.png" alt="Typescript" class="skills-img" loading="lazy" title="Typescript">
+          <img src="assets/images/skills/sql.png" alt="Accessibility" class="skills-img" loading="lazy"
+            title="Web Accessibility">
+          <img src="assets/images/skills/shell.webp" alt="Shell" class="skills-img" loading="lazy" title="Shell">
+          <img src="assets/images/skills/python.png" alt="NextJS" class="skills-img" loading="lazy" title="NextJS">
+          <img src="assets/images/skills/graphql.webp" alt="Graph Ql" class="skills-img" loading="lazy"
+            title="Graph QL">
+          <img src="assets/images/skills/git.webp" alt="Git" class="skills-img" loading="lazy" title="Git">
+          <img src="assets/images/skills/html.webp" alt="CSS" class="skills-img" loading="lazy" title="CSS">
+          <img src="assets/images/skills/js.webp" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
+          </figure>
         </div>
-      </section>
+      </div>
+    </section>
 
-      
-      <section class="work">
-        <div class="container">
-          <h2 class="h2" id="work">Desarrollos destacados</h2>
-          <div class="work-boxes">
-            <div class="work-box">
-              <div class="work-textbox">
-                <!-- Add your project title here -->
-                <h3 class="h3">CRM OSFATUN</h3>
-                <!-- Add small description of your project  -->
-                <p class="work-text">
-                  Desarrollado con Laravel 8 en el backend y Vue en el Front. Centraliza las gestiones de los socios ante la obra social.
-                </p>
-                <!-- Add technologies you used to build the project -->
-                <ol class="work-technologies">
-                  <li>Laravel</li>
-                  <li>Vue</li>
-                  <li>PostgreSQL</li>
-                  <li>AWS</li>
-                </ol>
+    <!-- Replace testimonials, author name, author job, img src and, alt attributes -->
 
-                <div class="work-links">
-                  <!-- Add url of project in href attribute -->
-                  <a href="https://www.osfatun.com.ar/" target="_blank" rel="noopener" class="link"
-                    >Ver Proyecto</a
-                  >
-
-                
-                  </a>
-                </div>
-              </div>
-
-         <!-- Update img src and alt attribute  -->
-
-              <picture class="work-img">
-                <img
-                  loading="lazy"
-                  src="assets/images/work/crm1.png"
-                  alt="agency elevation"
-                />
-              </picture>
-            </div>
-            <div class="work-box">
-              <div class="work-textbox">
-                <!-- Add your project title here -->
-                <h3 class="h3">MI GESTAR - PAGO DE SERVICIOS</h3>
-                <!-- Add small description of your project  -->
-
-                <p class="work-text">Se trata de un sistema de pagos multiempresa, donde pueden pagar distintos servicios totalmente configurable, los clientes pueden descargar facturas, y los administradoes pueden configurar hasta 3 pasarellas de pago distintas.</p>
-                <ol class="work-technologies">
-                  <li>Laravel</li>
-                  <li>MySql</li>
-                  <li>AWS</li>
-                </ol>
-                <div class="work-links">
-                  <!-- Add url of project in href attribute -->
-                  <a href="https://migestarcoop.com.ar/CEVIC/login" target="_blank" rel="noopener" class="link"
-                    >Ver Proyecto</a
-                  >
-
-                    
-                </div>
-              </div>
-         <!-- Update img src and alt attribute  -->
-              <picture class="work-img">
-                <img
-                  loading="lazy"
-                  src="assets/images/work/gestar2.png"
-                  alt="agency elevation"
-                />
-              </picture>
-            </div>
-            <div class="work-box">
-              <div class="work-textbox">
-                <!-- Add your project title here -->
-                <h3 class="h3">ERP - BIT</h3>
-                <!-- Add small description of your project  -->
-                <p class="work-text">
-                  Sistema de gestión de negocios multisucursal con manejo de stock, sucursales, vendedores facturacion AFIP para responsables inscriptos y monotributistas generación de reportes para afip, alertas de stock, compras y cajas. Ultilizado hasta ahora por 15 negocios
-                </p>
-                <ol class="work-technologies">
-                  <li>Laravel</li>
-                  <li>MySql</li>
-                  <li>Ubuntu Server</li>
-                  <li>Web Services AFIP</li>
-                </ol>
-                <div class="work-links">
-                  <!-- Add url of project in href attribute -->
-                  <a href="#" target="_blank" rel="noopener" class="link"
-                    >Ver Proyecto</a
-                  >
-
-                   <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
-                  <a
-                    href="https://gitlab.com/tanometro/erp"
-                    target="_blank"
-                    rel="noopener"
-                    title="Source code"
-                  >
-                    <img
-                      src="assets/images/social-links/github.svg"
-                      alt="GitHub"
-                      loading="lazy"
-                    />
-                  </a>
-                </div>
-              </div>
-         <!-- Update img src and alt attribute  -->
-              <picture class="work-img">
-                <img
-                  loading="lazy"
-                  src="assets/images/work/erp1.png"
-                  alt="contribute dev"
-                />
-              </picture>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      
-      <!-- Update skills-img src, alt  and title attributes I have added some other logos in assets/images/skill for your convenience feel free to pick one if required  -->
-
-      <section class="skills">
-        <div class="container">
-          <h2 class="h2" id="skills">Mis Skills</h2>
-          <div class="skills-imgs">
-                <img src="assets/images/skills/Laravel.png" alt="React" class="skills-img" loading="lazy" title="React">
-                <img src="assets/images/skills/vue.png" alt="Svelte" class="skills-img" loading="lazy" title="Svelte">
-                 <img src="assets/images/skills/php.png" alt="Typescript" class="skills-img" loading="lazy" title="Typescript">
-                 <img src="assets/images/skills/sql.png" alt="Accessibility" class="skills-img" loading="lazy" title="Web Accessibility">
-                 <img src="assets/images/skills/shell.webp" alt="Shell" class="skills-img" loading="lazy" title="Shell">
-                 <img src="assets/images/skills/python.png" alt="NextJS" class="skills-img" loading="lazy" title="NextJS">
-                 <img src="assets/images/skills/graphql.webp" alt="Graph Ql" class="skills-img" loading="lazy" title="Graph QL">
-                 <img src="assets/images/skills/git.webp" alt="Git" class="skills-img" loading="lazy" title="Git">
-                 <img src="assets/images/skills/html.webp" alt="CSS" class="skills-img" loading="lazy" title="CSS">
-                 <img src="assets/images/skills/js.webp" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <!-- Replace testimonials, author name, author job, img src and, alt attributes -->
-
-      <section class="contact">
-        <div class="container">
-          <h2 class="h2" id="contact">Enviame un Mensaje</h2>
-          <div class="contact-content">
-            <div class="contact-textbox">
-              <!-- Please comment this component if you're not available for hire -->
-              <strong href="#" class="hire-alert">
-                <span class="indicator"></span>
-                Disponible
-              </strong>
-              <p class="contact-text">
+    <section class="contact">
+      <div class="container">
+        <h2 class="h2" id="contact">Enviame un Mensaje</h2>
+        <div class="contact-content">
+          <div class="contact-textbox">
+            <!-- Please comment this component if you're not available for hire -->
+            <strong href="#" class="hire-alert">
+              <span class="indicator"></span>
+              Disponible
+            </strong>
+            <p class="contact-text">
               No dudes en contactarme para contarme tu proyecto
-              </p>
+            </p>
 
-              <p class="contact-text">
-                Mail: lucianojs110@gmail.com
-              </p>
-              <p class="contact-text">
-                Whatsapp: +54 03454401604
-              </p>
-             
-             
-            </div>
-            <form action="https://formsubmit.co/lucianojs110@gmail.com" method="POST" class="contact-form" netlify>
-              <div class="form-field">
-                <label for="name">Nombre</label>
-                <input type="text" name="name" id="name" required />
-              </div>
-              <div class="form-field">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  required
-                  inputmode="email"
-                />
-              </div>
-              <div class="form-field">
-                <label for="message">En que puedo ayudarte?</label>
-                <textarea name="message" id="message" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-cta">Enviar</button>
-            </form>
+            <p class="contact-text">
+              Mail: lucianojs110@gmail.com
+            </p>
+            <p class="contact-text">
+              Whatsapp: +54 03454401604
+            </p>
+
+
           </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <!-- Update href and src attributes -->
-          <nav>
-            <ol class="footer-links">
-              <li class="footer-link">
-                <a title="GitHub" href="https://github.com/Lucianojs110" target="_blank" rel="noopener"
-                  ><img
-                    loading="lazy"
-                    src="assets/images/social-links/github.svg"
-                    alt="GitHub"
-                /></a>
-              </li>
-             
-              <li class="footer-link">
-                <a title="Linkedin" href="https://www.linkedin.com/in/luciano-oro%C3%B1o-1b6370150/" target="_blank" rel="noopener"
-                  ><img
-                    loading="lazy"
-                    src="assets/images/social-links/linkedin.svg"
-                    alt="Linkedin"
-                /></a>
-              </li>
-             
-            </ol>
-          </nav>
-          <p class="footer-text">
-            &copy; <span>2024</span>  
-          </p>
-          <label class="theme-switch" for="theme-switch">
-            <span>Dark Theme</span>
-            <input type="checkbox" id="theme-switch" role="switch"/>
-          </label>
+          <form action="https://formsubmit.co/lucianojs110@gmail.com" method="POST" class="contact-form" netlify>
+            <div class="form-field">
+              <label for="name">Nombre</label>
+              <input type="text" name="name" id="name" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required inputmode="email" />
+            </div>
+            <div class="form-field">
+              <label for="message">En que puedo ayudarte?</label>
+              <textarea name="message" id="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-cta">Enviar</button>
+          </form>
         </div>
       </div>
-    </footer>
-  </body>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <!-- Update href and src attributes -->
+        <nav>
+          <ol class="footer-links">
+            <li class="footer-link">
+              <a title="GitHub" href="https://github.com/Lucianojs110" target="_blank" rel="noopener"><img
+                  loading="lazy" src="assets/images/social-links/github.svg" alt="GitHub" /></a>
+            </li>
+
+            <li class="footer-link">
+              <a title="Linkedin" href="https://www.linkedin.com/in/luciano-oro%C3%B1o-1b6370150/" target="_blank"
+                rel="noopener"><img loading="lazy" src="assets/images/social-links/linkedin.svg" alt="Linkedin" /></a>
+            </li>
+
+          </ol>
+        </nav>
+        <p class="footer-text">
+          &copy; <span>2024</span>
+        </p>
+        <label class="theme-switch" for="theme-switch">
+          <span>Dark Theme</span>
+          <input type="checkbox" id="theme-switch" role="switch" />
+        </label>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
