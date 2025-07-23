@@ -56,16 +56,19 @@ You will find a file named `index.html` open it and follow the guidance inscribe
 
 ```html
 <!-- Update with your name -->
-<title>Syed Mohsin's Portfolio</title>
+<title>Luciano Oroño </title>
 ```
 
 ```html
 <div class="header-textbox">
   <!-- Replace with your name & job title -->
-  <h1 class="h1">Hi, I'm Syed Mohsin Frontend Web Developer</h1>
+  <h1 class="h1">Hola! soy Luciano Oroño<br />
+          Full Stack Developer</h1>
 
   <!-- Add a small introductory paragraph about yourself -->
-  <p class="header-text">A frontend software engineer and interface designer</p>
+  <p class="header-text"> Soy un apasionado desarrollador web full stack con una misión: transformar ideas en experiencias digitales
+          excepcionales. Con experiencia en el desarrollo de soluciones robustas y creativas, estoy aquí para llevar tu
+          visión al siguiente nivel.</p>
 </div>
 ```
 
